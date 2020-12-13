@@ -1,0 +1,29 @@
+.stats-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px; 
+    height: 38px; 
+    border-radius: 19px;
+    background: #ffbb3b; 
+    z-index: 0;
+    padding: 0 8px;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: inset 0px -1px 1px rgba(255, 255, 255, 0.28), inset 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.reset-btn {
+    width: fit-content;
+    background:  #4b06a0;
+}
+
+.repeat-words-btn {
+    width: fit-content;
+    margin-right: 10px;
+    text-align: center;  
+    background:  #098fa4; 
+}

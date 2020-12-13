@@ -1,0 +1,111 @@
+.navigation {
+    @include flex();
+    @include font($size: 1.5rem, $height: 160%);
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    height: 100vh;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 370px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    background: #5C258D;  
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  
+    background: linear-gradient(to right, #4389A2, #5C258D); 
+    transition: all .5s ease-in;
+    padding: 100px 20px 100px 70px;
+    opacity: 1;
+    z-index: 2;
+
+    @media (max-width: 320px) {
+        width: 320px;
+    }
+
+    li {
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            padding-bottom: 3px;
+            background: #ffd105;
+            border-radius: 20px;
+            padding: 7px 20px;
+            box-shadow: -1px 3px 0px #f07807;
+            margin: 5px 0px;               
+        }
+     
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.5rem;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s ease-in-out;
+            color: white;
+            border-bottom: 1px white;         
+        }
+    }
+}
+
+.active {
+    padding-bottom: 3px;
+    background: #0f84a4;
+    border-radius: 20px;
+    padding: 7px 20px;
+    box-shadow: -1px 3px 0px #4a3d82;
+    margin: 5px 0px;
+}
+
+.navigation-active {
+    opacity: 1;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+}
+
+.ico {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin-right: 10px;
+}
+.main {
+    background-image: url('../assets/icons/rocket.svg');
+}
+.space {
+    background-image: url('../assets/icons/space.svg');
+}
+.weather {
+    background-image: url('../assets/icons/weather.svg');
+}
+.animals-1 {
+    background-image: url('../assets/icons/animals-1.svg');
+}
+.animals-2 {
+    background-image: url('../assets/icons/animals-2.svg');
+}
+.fruits {
+    background-image: url('../assets/icons/fruits.svg');
+}
+.colors {
+    background-image: url('../assets/icons/colors.svg');
+}
+.sports {
+    background-image: url('../assets/icons/sports.svg');
+}
+.nature {
+    background-image: url('../assets/icons/nature.svg');
+}
+

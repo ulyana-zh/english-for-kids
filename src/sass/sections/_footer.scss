@@ -1,0 +1,31 @@
+.footer {
+    color: white;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); 
+}
+
+.wrapper__footer {
+    @include flex();
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    span {
+        margin: 0 10px;
+    }
+}
+
+.logo {
+img {
+    width: 80px;
+    height: 25px;
+}
+&__github {
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+}

@@ -1,0 +1,25 @@
+@mixin font ($size: none, $height: none, $spacing: none, $style: normal, $weight: normal) {
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing; 
+    font-style: $style;
+    font-weight: $weight;       
+}
+
+@mixin flex ($display: flex, $align: center, $justify: space-between) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin media-big-screen {
+    @media (max-width: 1156px) { @content; }
+}
+
+@mixin media-mobile {
+    @media (max-width: 406px) { @content; }
+} 
+
+@mixin media-tablet {
+    @media (max-width: 767px) { @content; }
+}

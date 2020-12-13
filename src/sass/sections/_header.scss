@@ -1,0 +1,24 @@
+.wrapper__header,
+.container {
+    @include flex();
+}
+
+.wrapper__header {
+    padding-top: 50px;
+    min-height: calc(10vh + 58px);
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.category-name {
+    font-size: 2.5rem;
+    color: white;
+
+    @media (max-width: 530px) {
+        display: none;
+    }
+}
+
+.btn-container {
+    @include flex();
+}
